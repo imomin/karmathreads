@@ -1,0 +1,49 @@
+<style type="text/css">
+#sidebar {		
+	padding-left: 10px;
+	position: fixed;
+	left: 0;
+	top:10%;		
+	z-index: 2;
+}
+#sidebar a {
+	text-decoration: none;
+	color: #000;
+}
+#sidebar li {
+	padding-bottom: 5px;
+}
+.color-preview {
+	border: 1px solid #CCC;
+	margin: 2px;
+	zoom: 1;
+	vertical-align: top;
+	display: inline-block;
+	cursor: pointer;
+	overflow: hidden;
+	width: 20px;
+	height: 20px;
+}
+</style>
+<div class="container-fluid">
+	<%- partial('leftMenu') %>
+	<div class="row">
+		<div class="col-lg-6"><!--col-lg-5-->
+			<!-- tees -->
+			<%- partial('teeOptions') %>
+			<!-- text -->
+			<%- partial('textEditor') %>			
+			<!-- picture -->
+			<%- partial('pictures') %>			
+			<!-- QR Code -->
+			<%- partial('qrcode') %>
+			<!-- Pricing -->
+			<%- partial('pricing') %>			
+			<!-- Details -->
+			<%- partial('details') %>
+			<!-- Preview -->
+			<%- partial('preview') %>			            
+		</div>	        
+		<%- partial('editor') %>
+	</div>
+</div>

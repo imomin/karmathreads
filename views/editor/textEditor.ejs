@@ -1,0 +1,120 @@
+			<div class="" id="panel2" style="display:none;">
+			    <div class="modal-dialog" style="left:80px;margin-left:0;width:400px;opacity: 0.9;position: absolute;">
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			          <h4 class="modal-title">Text Editor</h4>
+			        </div>
+			        <div class="modal-body">                    
+                        <div class="editorControls">                                                        
+                            <!--<input type="text" placeholder="Text" class="col col-9">&nbsp;   -->
+                            <p>
+                            <textarea id="" style="height: 32px; resize: horizontal; word-wrap: break-word;overflow: hidden; "></textarea>
+                            <br>
+                            <button type="button" class="btn btn-default btn-block">Add</button>
+                            </p>
+                            <div class="btn-group">                                
+                                <a class="btn btn-primary" href="#" data-toggle="tooltip" data-original-title="Bold"><i class="icon-bold"></i></a>
+                                <a class="btn btn-primary" href="#" data-toggle="tooltip" data-original-title="Italic"><i class="icon-italic"></i></a>    
+                                <a class="btn btn-primary" href="#" data-toggle="tooltip" data-original-title="Strike"><i class="icon-strikethrough"></i></a>
+                                <a class="btn btn-primary" href="#" data-toggle="tooltip" data-original-title="Underline"><i class="icon-underline"></i></a>
+                            </div>
+                            <div class="btn-group">
+                                <a class="btn btn-primary" href="#" data-toggle="tooltip" data-original-title="Align Left"><i class="icon-align-left"></i></a>
+                                <a class="btn btn-primary" href="#" data-toggle="tooltip" data-original-title="Align Center"><i class="icon-align-center"></i></a>
+                                <a class="btn btn-primary" href="#" data-toggle="tooltip" data-original-title="Align Right"><i class="icon-align-right"></i></a>
+                                <a class="btn btn-primary" href="#" data-toggle="tooltip" data-original-title="Align Justify"><i class="icon-align-justify"></i></a>
+                            </div>                            
+                            <p>     
+                            <div class="row">
+                                <div class="col col-lg-10">
+                                    <a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown" data-original-title="Fonts"><i class="icon-font"></i></a>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="font-family-X">
+                					    <li><a tabindex="-1" href="#" onclick="setFont('Arial');" class="Arial" data-original-title="">Arial</a></li>
+    								    <li><a tabindex="-1" href="#" onclick="setFont('Helvetica');" class="Helvetica" data-original-title="">Helvetica</a></li>
+    								    <li><a tabindex="-1" href="#" onclick="setFont('Myriad Pro');" class="MyriadPro" data-original-title="">Myriad Pro</a></li>
+    								    <li><a tabindex="-1" href="#" onclick="setFont('Delicious');" class="Delicious" data-original-title="">Delicious</a></li>
+    								    <li><a tabindex="-1" href="#" onclick="setFont('Verdana');" class="Verdana" data-original-title="">Verdana</a></li>
+    								    <li><a tabindex="-1" href="#" onclick="setFont('Georgia');" class="Georgia" data-original-title="">Georgia</a></li>
+    								    <li><a tabindex="-1" href="#" onclick="setFont('Courier');" class="Courier" data-original-title="">Courier</a></li>
+    								    <li><a tabindex="-1" href="#" onclick="setFont('Comic Sans MS');" class="ComicSansMS" data-original-title="">Comic Sans MS</a></li>
+    								    <li><a tabindex="-1" href="#" onclick="setFont('Impact');" class="Impact" data-original-title="">Impact</a></li>
+    								    <li><a tabindex="-1" href="#" onclick="setFont('Monaco');" class="Monaco" data-original-title="">Monaco</a></li>
+    								    <li><a tabindex="-1" href="#" onclick="setFont('Optima');" class="Optima" data-original-title="">Optima</a></li>
+    								    <li><a tabindex="-1" href="#" onclick="setFont('Hoefler Text');" class="Hoefler Text" data-original-title="">Hoefler Text</a></li>
+    								    <li><a tabindex="-1" href="#" onclick="setFont('Plaster');" class="Plaster" data-original-title="">Plaster</a></li>
+    								    <li><a tabindex="-1" href="#" onclick="setFont('Engagement');" class="Engagement" data-original-title="">Engagement</a></li>
+    				                </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-lg-10">
+                                    <label>
+                                      Font Background color:
+                                      <div style="width:20px;height:20px;background-color:#000;" id="fontBGColorPicker" class="color-preview" data-toggle="popover" data-placement="bottom" html="true" data-content='<ul class=""><li class="color-preview" title="Black (Black)" style="background-color: #000000"></li> <li class="color-preview" title="Grey (424U)" style="background-color: #827F77"></li><li class="color-preview" title="Midtone Grey (423C)" style="background-color: #96938E"></li><li class="color-preview" title="Light Grey (422U)" style="background-color: #AFAAA3"></li><li class="color-preview" title="White (White)" style="background-color: #FFFFFF"></li><li class="color-preview" title="Red (186C)" style="background-color: #CE1126"></li><li class="color-preview" title="Orange Red (485U)" style="background-color: #D81E05"></li><li class="color-preview" title="Deep Pink (200C)" style="background-color: #C41E3A"></li><li class="color-preview" title="Hot Pink (225C)" style="background-color: #ED2893"></li><li class="color-preview" title="Magenta (239U)" style="background-color: #E0218E"></li><li class="color-preview" title="Charity Pink (210C)" style="background-color: #FFA0BF"></li><li class="color-preview" title="Pink (182U)" style="background-color: #F9BFC1"></li><li class="color-preview" title="Tan (156U)" style="background-color: #F2C68C"></li><li class="color-preview" title="Lemon (100U)" style="background-color: #F4ED7C"></li><li class="color-preview" title="Gold (110U)" style="background-color: #D8B511"></li><li class="color-preview" title="Athletic Gold (1235U)" style="background-color: #FCB514"></li><li class="color-preview" title="Light Orange (1375U)" style="background-color: #F99B0C"></li><li class="color-preview" title="Orange (021U)" style="background-color: #EF6B00"></li><li class="color-preview" title="Yellow (Yellow U)" style="background-color: #FFFF00"></li><li class="color-preview" title="Old Gold (126U)" style="background-color: #7C6316"></li><li class="color-preview" title="Brown (1615U)" style="background-color: #843F0F"></li><li class="color-preview" title="Cardinal (1807U)" style="background-color: #A03033"></li><li class="color-preview" title="Maroon (222C)" style="background-color: #70193D"></li><li class="color-preview" title="Teal (322U)" style="background-color: #007272"></li><li class="color-preview" title="Kelly Green (342U)" style="background-color: #006B54"></li><li class="color-preview" title="Grass Green (335C)" style="background-color: #007C66"></li><li class="color-preview" title="Lime (367U)" style="background-color: #8DD169"></li><li class="color-preview" title="Forest (357U)" style="background-color: #215B33"></li><li class="color-preview" title="Green (369U)" style="background-color: #56AA1C"></li><li class="color-preview" title="Olive (392U)" style="background-color: #848205"></li><li class="color-preview" title="Light Blue (291U)" style="background-color: #A8CEE2"></li><li class="color-preview" title="Turquoise (306U)" style="background-color: #00BCE2"></li><li class="color-preview" title="Blue (300U)" style="background-color: #0072C6"></li><li class="color-preview" title="Royal (286U)" style="background-color: #0038A8"></li><li class="color-preview" title="Navy (540U)" style="background-color: #00335B"></li><li class="color-preview" title="Deep Navy (539C)" style="background-color: #003049"></li><li class="color-preview" title="Light Purple (2577U)" style="background-color: #AA72BF"></li><li class="color-preview" title="Dark Purple (2623U)" style="background-color: #5B195E"></li><li class="color-preview" title="Bright Purple (267C)" style="background-color: #59118E"></li></ul>' title="" data-original-title="Font Color"></div>
+                                      <input type="hidden" id="text-FontBGColor" class="color-picker" size="7" value="#000000">
+                                    </label>                                        
+                                    </a>
+                                </div>                                
+                            </div>                            
+                              <div class="row">
+                                <div class="col col-lg-10">
+                                    <label>
+                                      Font color:
+                                      <div style="width:20px;height:20px;background-color:#000;" id="fontColorPicker" class="color-preview" data-toggle="popover" data-placement="bottom" html="true" data-content='<ul class=""><li class="color-preview" title="Black (Black)" style="background-color: #000000"></li> <li class="color-preview" title="Grey (424U)" style="background-color: #827F77"></li><li class="color-preview" title="Midtone Grey (423C)" style="background-color: #96938E"></li><li class="color-preview" title="Light Grey (422U)" style="background-color: #AFAAA3"></li><li class="color-preview" title="White (White)" style="background-color: #FFFFFF"></li><li class="color-preview" title="Red (186C)" style="background-color: #CE1126"></li><li class="color-preview" title="Orange Red (485U)" style="background-color: #D81E05"></li><li class="color-preview" title="Deep Pink (200C)" style="background-color: #C41E3A"></li><li class="color-preview" title="Hot Pink (225C)" style="background-color: #ED2893"></li><li class="color-preview" title="Magenta (239U)" style="background-color: #E0218E"></li><li class="color-preview" title="Charity Pink (210C)" style="background-color: #FFA0BF"></li><li class="color-preview" title="Pink (182U)" style="background-color: #F9BFC1"></li><li class="color-preview" title="Tan (156U)" style="background-color: #F2C68C"></li><li class="color-preview" title="Lemon (100U)" style="background-color: #F4ED7C"></li><li class="color-preview" title="Gold (110U)" style="background-color: #D8B511"></li><li class="color-preview" title="Athletic Gold (1235U)" style="background-color: #FCB514"></li><li class="color-preview" title="Light Orange (1375U)" style="background-color: #F99B0C"></li><li class="color-preview" title="Orange (021U)" style="background-color: #EF6B00"></li><li class="color-preview" title="Yellow (Yellow U)" style="background-color: #FFFF00"></li><li class="color-preview" title="Old Gold (126U)" style="background-color: #7C6316"></li><li class="color-preview" title="Brown (1615U)" style="background-color: #843F0F"></li><li class="color-preview" title="Cardinal (1807U)" style="background-color: #A03033"></li><li class="color-preview" title="Maroon (222C)" style="background-color: #70193D"></li><li class="color-preview" title="Teal (322U)" style="background-color: #007272"></li><li class="color-preview" title="Kelly Green (342U)" style="background-color: #006B54"></li><li class="color-preview" title="Grass Green (335C)" style="background-color: #007C66"></li><li class="color-preview" title="Lime (367U)" style="background-color: #8DD169"></li><li class="color-preview" title="Forest (357U)" style="background-color: #215B33"></li><li class="color-preview" title="Green (369U)" style="background-color: #56AA1C"></li><li class="color-preview" title="Olive (392U)" style="background-color: #848205"></li><li class="color-preview" title="Light Blue (291U)" style="background-color: #A8CEE2"></li><li class="color-preview" title="Turquoise (306U)" style="background-color: #00BCE2"></li><li class="color-preview" title="Blue (300U)" style="background-color: #0072C6"></li><li class="color-preview" title="Royal (286U)" style="background-color: #0038A8"></li><li class="color-preview" title="Navy (540U)" style="background-color: #00335B"></li><li class="color-preview" title="Deep Navy (539C)" style="background-color: #003049"></li><li class="color-preview" title="Light Purple (2577U)" style="background-color: #AA72BF"></li><li class="color-preview" title="Dark Purple (2623U)" style="background-color: #5B195E"></li><li class="color-preview" title="Bright Purple (267C)" style="background-color: #59118E"></li></ul>' title="" data-original-title="Font Color"></div>
+                                      <input type="hidden" id="text-FontColor" class="color-picker" size="7" value="#000000">
+                                    </label>                                        
+                                    </a>
+                                </div>                                
+                              </div>
+                              <div class="row">
+                                <div class="col col-lg-12">
+                                    <label>
+                                      Font Border color:
+                                      <div style="width:20px;height:20px;background-color:#000;" id="fontBorderColor" class="color-preview" data-toggle="popover" data-placement="bottom" html="true" data-content='<ul class=""><li class="color-preview" title="Black (Black)" style="background-color: #000000"></li> <li class="color-preview" title="Grey (424U)" style="background-color: #827F77"></li><li class="color-preview" title="Midtone Grey (423C)" style="background-color: #96938E"></li><li class="color-preview" title="Light Grey (422U)" style="background-color: #AFAAA3"></li><li class="color-preview" title="White (White)" style="background-color: #FFFFFF"></li><li class="color-preview" title="Red (186C)" style="background-color: #CE1126"></li><li class="color-preview" title="Orange Red (485U)" style="background-color: #D81E05"></li><li class="color-preview" title="Deep Pink (200C)" style="background-color: #C41E3A"></li><li class="color-preview" title="Hot Pink (225C)" style="background-color: #ED2893"></li><li class="color-preview" title="Magenta (239U)" style="background-color: #E0218E"></li><li class="color-preview" title="Charity Pink (210C)" style="background-color: #FFA0BF"></li><li class="color-preview" title="Pink (182U)" style="background-color: #F9BFC1"></li><li class="color-preview" title="Tan (156U)" style="background-color: #F2C68C"></li><li class="color-preview" title="Lemon (100U)" style="background-color: #F4ED7C"></li><li class="color-preview" title="Gold (110U)" style="background-color: #D8B511"></li><li class="color-preview" title="Athletic Gold (1235U)" style="background-color: #FCB514"></li><li class="color-preview" title="Light Orange (1375U)" style="background-color: #F99B0C"></li><li class="color-preview" title="Orange (021U)" style="background-color: #EF6B00"></li><li class="color-preview" title="Yellow (Yellow U)" style="background-color: #FFFF00"></li><li class="color-preview" title="Old Gold (126U)" style="background-color: #7C6316"></li><li class="color-preview" title="Brown (1615U)" style="background-color: #843F0F"></li><li class="color-preview" title="Cardinal (1807U)" style="background-color: #A03033"></li><li class="color-preview" title="Maroon (222C)" style="background-color: #70193D"></li><li class="color-preview" title="Teal (322U)" style="background-color: #007272"></li><li class="color-preview" title="Kelly Green (342U)" style="background-color: #006B54"></li><li class="color-preview" title="Grass Green (335C)" style="background-color: #007C66"></li><li class="color-preview" title="Lime (367U)" style="background-color: #8DD169"></li><li class="color-preview" title="Forest (357U)" style="background-color: #215B33"></li><li class="color-preview" title="Green (369U)" style="background-color: #56AA1C"></li><li class="color-preview" title="Olive (392U)" style="background-color: #848205"></li><li class="color-preview" title="Light Blue (291U)" style="background-color: #A8CEE2"></li><li class="color-preview" title="Turquoise (306U)" style="background-color: #00BCE2"></li><li class="color-preview" title="Blue (300U)" style="background-color: #0072C6"></li><li class="color-preview" title="Royal (286U)" style="background-color: #0038A8"></li><li class="color-preview" title="Navy (540U)" style="background-color: #00335B"></li><li class="color-preview" title="Deep Navy (539C)" style="background-color: #003049"></li><li class="color-preview" title="Light Purple (2577U)" style="background-color: #AA72BF"></li><li class="color-preview" title="Dark Purple (2623U)" style="background-color: #5B195E"></li><li class="color-preview" title="Bright Purple (267C)" style="background-color: #59118E"></li></ul>' title="" data-original-title="Font Border Color"></div>
+                                      <input type="hidden" id="text-strokecolor" class="color-picker" size="7" value="#000000">
+                                      &nbsp;
+                                      <input id="textBorderWidth" type="text" class="" value="0" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="0" data-slider-orientation="horizontal" data-slider-selection="after"data-slider-tooltip="hide">
+                                    </label>
+                                    <br>                                    
+                                </div>                                
+                              </div>
+                              <div class="row">
+                                <div class="col col-lg-12">
+                                    <div class="btn-group" data-toggle="buttons-radio">
+                                      <label class="btn btn-primary">
+                                        <input type="radio" name="options" id="option1">Curve Down
+                                      </label>
+                                      <label class="btn btn-primary">
+                                        <input type="radio" name="options" id="option2">In-Line
+                                      </label>
+                                      <label class="btn btn-primary">
+                                        <input type="radio" name="options" id="option3">Curve Up
+                                      </label>
+                                    </div>
+                                    <br> 
+                                </div>                                
+                              </div>
+                              <div class="row">
+                                <div class="col col-lg-12">
+                                    <label>
+                                      <input id="textCurve" type="text" class="" value="10" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="10" data-slider-orientation="horizontal" data-slider-selection="after"data-slider-tooltip="hide">
+                                    </label>
+                                    <br>                                    
+                                </div>                                
+                              </div>
+                            </p>
+                             <p>
+                            <div class="">
+                                <button type="button" class="btn btn-primary">Send to Back</button>
+                                <button type="button" class="btn btn-primary">Bring to Front</button>
+                            </div>
+                            </p>
+                        </div>                     
+			        </div>
+			        <div class="modal-footer">	          
+			          <a href="#" class="btn btn-primary">Apply</a>
+			        </div>
+			      </div><!-- /.modal-content -->
+			    </div><!-- /.modal-dalog -->
+			</div><!-- /.modal -->
